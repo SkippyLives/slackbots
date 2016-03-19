@@ -10,8 +10,10 @@ module.exports = function (req, res, next) {
     var rolls = [];
     var total = 0;
     var botPayload = {};
+    var token = '';
 
-    if (req.body.token != 'Ao8JtxwN1IjgITNQWtNtLWgU')
+
+    if (req.body.token != token)
     {
         return
     }
@@ -63,7 +65,8 @@ function roll(min, max) {
 }
 
 function send(payload, callback) {
-    var path = '/T0TJQR3CZ/B0TKB5H5W/ByBICQOvNBmfeZsT5iIgKytr';
+    var path = '';
+
     var uri = 'https://hooks.slack.com/services' + path;
 
     request({

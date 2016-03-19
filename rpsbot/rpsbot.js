@@ -14,8 +14,9 @@ module.exports = function (req, res, next) {
     var inputs = [];
 
     var botPayload = {};
+    var token = '';
 
-    if (req.body.token != 'boQucr9ebdKjVfE3ZX1Q8nJL') {
+    if (req.body.token != token) {
         return
     }
 
@@ -248,7 +249,8 @@ function helpText() {
 
 // send function to send to channel
 function send(payload, callback) {
-    var path = '/T0TJQR3CZ/B0TKB5H5W/ByBICQOvNBmfeZsT5iIgKytr';
+    var path = '';
+
     var uri = 'https://hooks.slack.com/services' + path;
 
     request({

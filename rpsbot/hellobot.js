@@ -1,6 +1,8 @@
 // JavaScript source code
 module.exports = function (req, res, next) {
-    if (req.body.token != "vYvGmJoUBw4t3AFqwMMxehPJ") {
+    var token = '';
+
+    if (req.body.token != token) {
         return
     }
 
