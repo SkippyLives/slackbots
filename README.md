@@ -9,7 +9,7 @@ Requires [node](https://nodejs.org/)
 node installs a package manager called npm which we use to get packages.
 
 
-### JavaScript
+## Packages ##
 
 In the app directory (dicebot for example) you will need to install the required packages
 They will be saved to a node_modules subdir
@@ -19,11 +19,15 @@ Each bots README will have the packages you need.
 npm install express --save
 ```
 
+## Running app ##
+
 To run the bot from the same app directory (dicebot for example)
 
 ```bash
 node app
 ```
+
+## Testing ##
 
 to test locally recommend curl as it can inject payloads that some apps need
 all apps have the hello bot so you can use hello as the keyword and it will responde with "Hello World"
