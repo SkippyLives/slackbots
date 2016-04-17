@@ -1,6 +1,6 @@
 // JavaScript source code
 module.exports = function (req, res, next) {
-    if (req.body.token == "vYvGmJoUBw4t3AFqwMMxehPJ") {
+    if (req.body.token == "") {
         var userName = req.body.user_name;
         var botPayload = {
             text: 'Hello, ' + userName + '!'
